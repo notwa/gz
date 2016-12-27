@@ -42,6 +42,13 @@ rom_table =
                     code_ind  = 27,
                     code_ram  = 0x800116E0,
                   },
+  [0xB428D8A7]  = {
+                    game      = "mm",
+                    version   = "1.0",
+                    region    = "u",
+                    code_ind  = 27,
+                    code_ram  = 0x800A5AC0,
+                  },
 }
 setmetatable(rom_table, {__index = function(t)
   io.write("unrecognized rom. select an action;\n  0. quit\n")
