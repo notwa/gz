@@ -122,6 +122,7 @@ Pressing a piece of equipment that is already equipped will unequip it.
 Unequpping a sword or equipping nothing to the B button will
 automatically set the current file's swordless flag.
 **_Warning:_** Unequipping boots will have strange effects, and usually cause an immediate crash.
+*Note:* Changing a C-button equip will not modify the equipped item slot for that button.
 
 ### File menu
 The **restore skulltulas** option clears all the gold skulltula flags in the current file,
@@ -216,7 +217,8 @@ For example,
 a command with the button combo `R + A` will only be activated if you press R first and then A,
 or R and A at the same time.
 `A + R`, or `R + B + A` will not activate the corresponding command.
-If two or more button combos interfere with one another, the most recently activated will take priority.
+If the set of buttons in one button combo is a subset of those in another button combo,
+the former will be overridden by the latter when both are active simultaneously.
 
 The following commands are available:
 - **show/hide menu**: Opens the utility menu if it's closed, closes it if it's opened.
